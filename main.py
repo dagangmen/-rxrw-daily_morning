@@ -1,10 +1,10 @@
-import random
-from time import localtime
-from requests import get, post
-from datetime import datetime, date
-from zhdate import ZhDate
-import sys
+from datetime import date, datetime
+import math
+from wechatpy import WeChatClient
+from wechatpy.client.api import WeChatMessage, WeChatTemplate
+import requests
 import os
+import random
 
 
 def get_color():
