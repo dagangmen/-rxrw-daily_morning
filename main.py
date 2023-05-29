@@ -1,12 +1,10 @@
 import random
-from time import time, localtime
-import cityinfo
+from time import localtime
 from requests import get, post
 from datetime import datetime, date
 from zhdate import ZhDate
 import sys
 import os
-
 
 def get_color():
     # 获取随机颜色
