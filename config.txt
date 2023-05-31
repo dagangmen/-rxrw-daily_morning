@@ -14,14 +14,48 @@
 "weather_key": "1cd0ed020b2f451cb7c284624af1375f",
 # 所在地区，可为省，城市，区，县，同时支持国外城市，例如伦敦
 "region": "石家庄",
-# 生日1，修改名字为对应需要显示的名字，如果生日为农历，在最前面加上r即可
-"birthday1": {"name": "我的宝贝", "birthday": "2002-09-01"},
+# 生日1，在日期前加r代表农历生日
+"birthday1": {"name": "大美女", "birthday": "r2002-08-06"},
 # 生日2
-"birthday2": {"name": "大帅哥", "birthday": "2004-05-25"},
-# 在一起的日子，格式同上，暂不不支持农历
-"love_date": "2021-07-10",
-# 金句中文，如果设置了，则会显示这里的，如果为空，默认会读取金山的每日金句
+"birthday2": {"name": "大帅哥", "birthday": "r2004-5-25"},
+# 纪念日1，会计算累计时间，格式"YYYY-MM-DD"
+"commemoration_day1": "2021-07-10",
+# 金句中文，留空默认显示金山的每日金句
 "note_ch": "",
 # 金句英文
-"note_en": ""
+"note_en": "",
+# 字体颜色:使用RGB颜色(如#000000黑色)，留空颜色默认随机
+"color_date":                     "",          # 日期字体颜色
+"color_region":                   "",          # 地区字体颜色
+"color_weather":                  "",          # 天气字体颜色
+"color_temp":                     "",          # 当前温度字体颜色
+"color_wind":                     "",          # 当前风向字体颜色
+"color_note_en":                  "",          # 金句英文字体颜色
+"color_note_zh":                  "",          # 金句中文字体颜色
+"color_max_temp":                 "",          # 最高温度字体颜色
+"color_min_temp":                 "",          # 最低温度字体颜色
+"color_sunrise":                  "",          # 日出字体颜色
+"color_sunset":                   "",          # 日落字体颜色
+"color_category":                 "",          # 空气质量字体颜色
+"color_pm2p5":                    "",          # pm2.5字体颜色
+"color_proposal":                 "",          # 今日建议字体颜色
+"color_chp":                      "",          # 彩虹屁字体颜色
+"color_birthday1":                "",          # 生日1字体颜色
+"color_birthday2":                "",          # 生日2字体颜色
+"color_commemoration_day1":       "",          # 纪念日1字体颜色
+"color_commemoration_day2":       "",          # 纪念日2字体颜色
+"color_yq":                       "",          # 疫情数据字体颜色
+"color_horoscope1":               "",          # 星座运势1字体颜色
+"color_countdown1":               "",          # 倒计时日1字体颜色
+"color_countdown2":               "",          # 倒计时2字体颜色
+"color_xqm":                      "",          # 生活小窍门字体颜色
+"color_health_tip":               "",          # 健康小提示字体颜色
+"color_saylove":                  "",          # 土味情话字体颜色
+"color_zaoan":                    "",          # 早安心语字体颜色
+"color_wanan":                    "",          # 晚安心语字体颜色
+"color_dujitang":                 "",          # 毒鸡汤字体颜色
+"color_tiangou":                  "",          # 舔狗日记字体颜色
+"color_mnpara":                   "",          # 小段子字体颜色
+"color_wenan":                    "",          # 微信朋友圈文案字体颜色
+"color_proverb":                  "",          # 文化谚语字体颜色
 }
