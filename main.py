@@ -6,25 +6,6 @@ from zhdate import ZhDate
 import sys
 import os
 
-def color(name, config):
-    # 获取字体颜色，如没设置返回随机颜色
-    try:
-        if config[name] == "":
-            color = get_color()
-        else:
-            color = config[name]
-        return color
-    except KeyError:
-        color = get_color()
-        return color
-
-
-def get_color():
-    # 获取随机颜色
-    get_colors = lambda n: list(map(lambda i: "#" + "%06x" % random.randint(0, 0xFFFFFF), range(n)))
-    color_list = get_colors(100)
-    return random.choice(color_list)
-
 
 def get_access_token():
     # appId
@@ -212,6 +193,25 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
         print("推送消息成功")
     else:
         print(response)
+
+def color(name, config):
+    # 获取字体颜色，如没设置返回随机颜色
+    try:
+        if config[name] == "":
+            color = get_color()
+        else:
+            color = config[name]
+        return color
+    except KeyError:
+        color = get_color()
+        return color
+
+
+def get_color():
+    # 获取随机颜色
+    get_colors = lambda n: list(map(lambda i: "#" + "%06x" % random.randint(0, 0xFFFFFF), range(n)))
+    color_list = get_colors(100)
+    return random.choice(color_list)
 
 
 if __name__ == "__main__":
